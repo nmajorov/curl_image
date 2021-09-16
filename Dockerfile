@@ -52,6 +52,9 @@ RUN ldconfig
 # making it easier to use volumes (no permission issues)
 RUN groupadd -r jboss -g 1000 && useradd -u 1000 -r -g jboss -m -d /opt/jboss -s /sbin/nologin -c "JBoss user" jboss && \
     chmod 755 /opt/jboss
+
+
+WORKDIR /opt/jboss
     
 EXPOSE 8080/tcp
 

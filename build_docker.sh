@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build  -t nm/curl:latest .
+docker build  -t quay.io/nmajorov/curl:7.45 .
